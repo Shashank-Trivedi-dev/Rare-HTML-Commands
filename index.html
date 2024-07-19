@@ -24,41 +24,140 @@
         margin-top: 2px;
       }
     </style>
-    <ruby>Shashank <rt>FirtsName</rt></ruby>
-    <ruby>Kumar <rt>MiddleName</rt></ruby>
-    <ruby>Trivedi<rt>LastName</rt></ruby>
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <ruby>Shashank <rt>FirtsName</rt></ruby>
+      <ruby>Kumar <rt>MiddleName</rt></ruby>
+      <ruby>Trivedi<rt>LastName</rt></ruby>
+    </div>
     <br />
 
     <!-- 02 s tag stroke -->
-    <p>
-      Price: <span style="text-decoration: line-through; color: red">1000</span>
-      <span style="color: green; font-weight: bold">599</span>
-    </p>
-
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <p>
+        Price:
+        <span style="text-decoration: line-through; color: red">1000</span>
+        <span style="color: green; font-weight: bold">599</span>
+      </p>
+    </div>
+    <br />
     <!-- 03 highlight -->
-    <p>
-      <span
-        style="font-style: italic; font-size: 24px; text-transform: capitalize"
-        >learn.</span
-      >
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <p>
+        <span
+          style="
+            font-style: italic;
+            font-size: 24px;
+            text-transform: capitalize;
+          "
+          >learn.</span
+        >
 
-      <mark
+        <mark
+          style="
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: capitalize;
+          "
+          >code.</mark
+        >
+        <span
+          style="
+            text-decoration: underline;
+            font-size: 24px;
+            text-transform: capitalize;
+          "
+          >repeat.</span
+        >
+      </p>
+    </div>
+    <br />
+
+    <!-- 04 details -->
+    <details
+      style="
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+      "
+    >
+      <summary
         style="
-          background-color: yellow;
+          cursor: pointer;
+          font-size: 1.2em;
           font-weight: bold;
-          font-size: 24px;
-          text-transform: capitalize;
+          color: #333;
         "
-        >code.</mark
       >
-      <span
-        style="
-          text-decoration: underline;
-          font-size: 24px;
-          text-transform: capitalize;
-        "
-        >repeat.</span
-      >
-    </p>
+        About Shashank Trivedi
+      </summary>
+      <p style="font-size: 1em; color: #555; line-height: 1.5">
+        Hi! I'm Shashank Trivedi, a passionate front-end developer with
+        experience in creating dynamic and responsive web applications. I
+        specialize in HTML, CSS, and JavaScript, and have a strong focus on user
+        experience and interface design. I love working on creative projects and
+        continuously improving my skills in modern web technologies.
+      </p>
+    </details>
+
+    <br />
+
+    <!-- abbr tag -->
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <p style="font-family: Arial, sans-serif; font-size: 16px; color: #333">
+        Follow
+        <abbr
+          title="Shashank Trivedi"
+          style="
+            border-bottom: 1px dashed #333;
+            text-decoration: none;
+            cursor: help;
+          "
+        >
+          Me
+        </abbr>
+        on Instagram
+      </p>
+    </div>
+    <br />
   </body>
 </html>

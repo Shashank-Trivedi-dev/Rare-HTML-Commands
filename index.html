@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @media (max-width: 768px) {
+        .footer-container {
+          display: block;
+          text-align: center;
+        }
+        .footer-column {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styled Examples</title>
+    <title>Rare and Useful HTML Tags</title>
   </head>
-  <body>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    "
+  >
+    <h1
+      style="text-align: center; margin-top: 20px; font-size: 2em; color: #333"
+    >
+      Rare and Useful HTML Tags
+    </h1>
+
     <!-- 01: Ruby Tag -->
     <div
       style="
@@ -15,9 +40,12 @@
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
       "
     >
-      <p style="font-size: 1.2em; font-weight: bold">The &lt;ruby&gt; Tag</p>
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
+        The &lt;ruby&gt; Tag
+      </p>
       <div style="font-size: 1.5em; text-align: center; margin: 10px">
         <ruby style="font-size: 1.5em; text-align: center; margin: 10px">
           Shashank
@@ -68,13 +96,26 @@
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
       "
     >
-      <p style="font-size: 1.2em; font-weight: bold">The &lt;s&gt; Tag</p>
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
+        The &lt;s&gt; Tag
+      </p>
       <p>
         Price:
-        <span style="text-decoration: line-through; color: red">1000</span>
-        <span style="color: green; font-weight: bold">599</span>
+        <span
+          style="
+            text-decoration: line-through;
+            color: red;
+            font-size: 1.2em;
+            margin-right: 10px;
+          "
+          >1000</span
+        >
+        <span style="color: green; font-weight: bold; font-size: 1.2em"
+          >599</span
+        >
       </p>
     </div>
     <br />
@@ -88,9 +129,12 @@
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
       "
     >
-      <p style="font-size: 1.2em; font-weight: bold">The &lt;mark&gt; Tag</p>
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
+        The &lt;mark&gt; Tag
+      </p>
       <p>
         <span
           style="
@@ -130,16 +174,19 @@
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
       "
     >
-      <p style="font-size: 1.2em; font-weight: bold">The &lt;details&gt; Tag</p>
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
+        The &lt;details&gt; Tag
+      </p>
       <details
         style="
           border: 1px solid #ddd;
           border-radius: 5px;
           padding: 10px;
           max-width: 600px;
-          margin: 20px auto;
+          margin: 0 auto;
           background-color: #f9f9f9;
         "
       >
@@ -174,9 +221,12 @@
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
       "
     >
-      <p style="font-size: 1.2em; font-weight: bold">The &lt;abbr&gt; Tag</p>
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
+        The &lt;abbr&gt; Tag
+      </p>
       <p style="font-family: Arial, sans-serif; font-size: 16px; color: #333">
         Follow
         <abbr
@@ -206,7 +256,7 @@
         margin: 20px;
       "
     >
-      <p style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px">
+      <p style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px">
         The &lt;q&gt; Tag
       </p>
       Explore the best in front-end development and design at
@@ -223,10 +273,148 @@
           max-width: 600px;
         "
       >
-        <a href="https://shashanktrivedi.com/" style="color: #007bff"
+        <a
+          href="https://shashanktrivedi.com/"
+          style="color: #007bff; text-decoration: none"
           >Shashank Trivedi's website.</a
-        ></q
-      >
+        >
+      </q>
     </div>
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      "
+    >
+      <div
+        class="footer-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 10px;
+        "
+      >
+        <!-- Column 1: About Me -->
+        <div
+          class="footer-column"
+          style="flex: 1; min-width: 200px; margin-bottom: 20px; padding: 10px"
+        >
+          <h3 style="font-size: 1.2em; margin-bottom: 10px; text-align: left">
+            About Me
+          </h3>
+          <p style="font-size: 0.9em; line-height: 1.5; text-align: left">
+            I'm Shashank Trivedi, a passionate front-end developer. Explore my
+            work and projects on my website and get in touch through the links.
+          </p>
+        </div>
+
+        <!-- Column 2: Social Media -->
+        <div
+          class="footer-column"
+          style="flex: 1; min-width: 200px; margin-bottom: 20px; padding: 10px"
+        >
+          <h3 style="font-size: 1.2em; margin-bottom: 10px; text-align: left">
+            Get in Touch
+          </h3>
+          <ul
+            style="list-style-type: disc; padding-left: 20px; text-align: left"
+          >
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://wa.me/+918447633442?text=Hey"
+                style="color: #fff; text-decoration: none"
+                >WhatsApp</a
+              >
+            </li>
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://www.linkedin.com/in/shashank-trivedi-dev"
+                style="color: #fff; text-decoration: none"
+                >LinkedIn</a
+              >
+            </li>
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://instagram.com/shashanktrivedicom?igshid=YmMyMTA2M2Y="
+                style="color: #fff; text-decoration: none"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Code & Projects -->
+        <div
+          class="footer-column"
+          style="flex: 1; min-width: 200px; margin-bottom: 20px; padding: 10px"
+        >
+          <h3 style="font-size: 1.2em; margin-bottom: 10px; text-align: left">
+            Code & Projects
+          </h3>
+          <ul
+            style="list-style-type: disc; padding-left: 20px; text-align: left"
+          >
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://replit.com/@Shashank-Trivedi-Dev"
+                style="color: #fff; text-decoration: none"
+                >Replit</a
+              >
+            </li>
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://codepen.io/Shashank-Trivedi-Dev"
+                style="color: #fff; text-decoration: none"
+                >CodePen</a
+              >
+            </li>
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://github.com/Shashank-Trivedi-dev"
+                style="color: #fff; text-decoration: none"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Website & Portfolio -->
+        <div
+          class="footer-column"
+          style="flex: 1; min-width: 200px; margin-bottom: 20px; padding: 10px"
+        >
+          <h3 style="font-size: 1.2em; margin-bottom: 10px; text-align: left">
+            Website & Portfolio
+          </h3>
+          <ul
+            style="list-style-type: disc; padding-left: 20px; text-align: left"
+          >
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://shashanktrivedi.com/project-portfolio/"
+                style="color: #fff; text-decoration: none"
+                >Project Portfolio</a
+              >
+            </li>
+            <li style="margin-bottom: 10px">
+              <a
+                href="https://shashanktrivedi.com/"
+                style="color: #fff; text-decoration: none"
+                >Website</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top: 20px; font-size: 0.8em; color: #ccc">
+        &copy; 2024 Shashank Trivedi. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>

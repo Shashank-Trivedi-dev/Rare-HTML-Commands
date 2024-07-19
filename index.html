@@ -3,27 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Styled Examples</title>
   </head>
   <body>
-    <!-- 01 ruby tr -->
-
-    <style>
-      ruby {
-        font-size: 1.5em;
-        /* display: inline-block; for below view */
-        text-align: center;
-        margin: 10px;
-      }
-
-      rt {
-        font-size: 0.5em;
-        /* display: block; for below view  */
-        text-align: center;
-        color: gray;
-        margin-top: 2px;
-      }
-    </style>
+    <!-- 01: Ruby Tag -->
     <div
       style="
         text-align: center;
@@ -34,13 +17,49 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
-      <ruby>Shashank <rt>FirtsName</rt></ruby>
-      <ruby>Kumar <rt>MiddleName</rt></ruby>
-      <ruby>Trivedi<rt>LastName</rt></ruby>
+      <p style="font-size: 1.2em; font-weight: bold">The &lt;ruby&gt; Tag</p>
+      <div style="font-size: 1.5em; text-align: center; margin: 10px">
+        <ruby style="font-size: 1.5em; text-align: center; margin: 10px">
+          Shashank
+          <rt
+            style="
+              font-size: 0.5em;
+              text-align: center;
+              color: gray;
+              margin-top: 2px;
+            "
+            >FirstName</rt
+          >
+        </ruby>
+        <ruby style="font-size: 1.5em; text-align: center; margin: 10px">
+          Kumar
+          <rt
+            style="
+              font-size: 0.5em;
+              text-align: center;
+              color: gray;
+              margin-top: 2px;
+            "
+            >MiddleName</rt
+          >
+        </ruby>
+        <ruby style="font-size: 1.5em; text-align: center; margin: 10px">
+          Trivedi
+          <rt
+            style="
+              font-size: 0.5em;
+              text-align: center;
+              color: gray;
+              margin-top: 2px;
+            "
+            >LastName</rt
+          >
+        </ruby>
+      </div>
     </div>
     <br />
 
-    <!-- 02 s tag stroke -->
+    <!-- 02: Strikethrough Price -->
     <div
       style="
         text-align: center;
@@ -51,6 +70,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
+      <p style="font-size: 1.2em; font-weight: bold">The &lt;s&gt; Tag</p>
       <p>
         Price:
         <span style="text-decoration: line-through; color: red">1000</span>
@@ -58,7 +78,8 @@
       </p>
     </div>
     <br />
-    <!-- 03 highlight -->
+
+    <!-- 03: Highlighted Text -->
     <div
       style="
         text-align: center;
@@ -69,6 +90,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
+      <p style="font-size: 1.2em; font-weight: bold">The &lt;mark&gt; Tag</p>
       <p>
         <span
           style="
@@ -78,7 +100,6 @@
           "
           >learn.</span
         >
-
         <mark
           style="
             background-color: yellow;
@@ -100,39 +121,7 @@
     </div>
     <br />
 
-    <!-- 04 details -->
-    <details
-      style="
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 10px;
-        max-width: 600px;
-        margin: 20px auto;
-        background-color: #f9f9f9;
-      "
-    >
-      <summary
-        style="
-          cursor: pointer;
-          font-size: 1.2em;
-          font-weight: bold;
-          color: #333;
-        "
-      >
-        About Shashank Trivedi
-      </summary>
-      <p style="font-size: 1em; color: #555; line-height: 1.5">
-        Hi! I'm Shashank Trivedi, a passionate front-end developer with
-        experience in creating dynamic and responsive web applications. I
-        specialize in HTML, CSS, and JavaScript, and have a strong focus on user
-        experience and interface design. I love working on creative projects and
-        continuously improving my skills in modern web technologies.
-      </p>
-    </details>
-
-    <br />
-
-    <!-- abbr tag -->
+    <!-- 04: Details Element -->
     <div
       style="
         text-align: center;
@@ -143,6 +132,51 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       "
     >
+      <p style="font-size: 1.2em; font-weight: bold">The &lt;details&gt; Tag</p>
+      <details
+        style="
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 10px;
+          max-width: 600px;
+          margin: 20px auto;
+          background-color: #f9f9f9;
+        "
+      >
+        <summary
+          style="
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+          "
+        >
+          About Shashank Trivedi
+        </summary>
+        <p style="font-size: 1em; color: #555; line-height: 1.5">
+          Hi! I'm Shashank Trivedi, a passionate front-end developer with
+          experience in creating dynamic and responsive web applications. I
+          specialize in HTML, CSS, and JavaScript, and have a strong focus on
+          user experience and interface design. I love working on creative
+          projects and continuously improving my skills in modern web
+          technologies.
+        </p>
+      </details>
+    </div>
+    <br />
+
+    <!-- 05: Abbreviation Tag -->
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <p style="font-size: 1.2em; font-weight: bold">The &lt;abbr&gt; Tag</p>
       <p style="font-family: Arial, sans-serif; font-size: 16px; color: #333">
         Follow
         <abbr
@@ -159,5 +193,40 @@
       </p>
     </div>
     <br />
+
+    <!-- 06: The Quote Tag -->
+    <div
+      style="
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+      "
+    >
+      <p style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px">
+        The &lt;q&gt; Tag
+      </p>
+      Explore the best in front-end development and design at
+      <q
+        cite="https://shashanktrivedi.com/"
+        style="
+          font-style: italic;
+          font-size: 1.2em;
+          color: #333;
+          border-left: 4px solid #007bff;
+          padding-left: 10px;
+          margin: 0 auto;
+          display: block;
+          max-width: 600px;
+        "
+      >
+        <a href="https://shashanktrivedi.com/" style="color: #007bff"
+          >Shashank Trivedi's website.</a
+        ></q
+      >
+    </div>
   </body>
 </html>
